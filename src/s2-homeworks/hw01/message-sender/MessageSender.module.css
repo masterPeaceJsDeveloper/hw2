@@ -1,0 +1,49 @@
+.sendForm {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 56px 0 0 70px ;
+    gap: 44px;
+}
+
+.textarea {
+    /*width: 940px;*/
+    /*height: 40px;*/
+    /*border: 1px solid green;*/
+    /*background-color: #F5F7FB;*/
+    /*overflow: hidden;*/
+    /*resize: none;*/
+    /*color: rgba(0, 0, 0, 60%);*/
+    /*border-right: 6px;*/
+    /*padding: 10px;*/
+    width: 976px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    background-color: #f8f9fa; /* Цвет фона */
+    resize: none;
+    overflow: hidden;
+    padding: 12px 0 11px 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.textarea::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+.button {
+    width: 120px;
+    height: 40px;
+    background: #0066CC;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.button:hover {
+
+}
+.button:active {
+
+}
