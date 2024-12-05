@@ -17,16 +17,14 @@ import avatar from './avatar.png'
 
 export type MessageType = {
     id: number
-    user: UserType
-    message: MessageTextType
-}
-type UserType= {
-    avatar: string
-    name: string
-}
-type MessageTextType = {
-    text: string
-    time: string
+    user: {
+        avatar: string
+        name: string
+    }
+    message: {
+        text: string
+        time: string
+    }
 }
 // структуру объекта не менять
 export const message0: MessageType = {
@@ -59,8 +57,8 @@ const HW1 = () => {
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>
-                    <Message id={message0.id} user={message0.user} message={message0.message}/>
-                    <FriendMessage id={friendMessage0.id} user={friendMessage0.user} message={friendMessage0.message}/>
+                    <Message message={message0}/>
+                    <FriendMessage friendMessage={friendMessage0}/>
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}
